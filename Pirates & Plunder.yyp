@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "1725cdd0-71e7-40ea-bbd9-3735e492cc86",
+            "Value": {
+                "id": "80060e06-27bd-4cff-a63f-50c64550ddb3",
+                "resourcePath": "objects\\obj_player_sails\\obj_player_sails.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "275a2cf1-9802-4769-a44d-c675769eb3a4",
             "Value": {
                 "id": "13084a6d-0aba-4097-ab86-e205b5f9acc2",
@@ -99,6 +107,14 @@
             "Value": {
                 "id": "dd5fb259-dd7c-440c-95f8-68d0be5358a8",
                 "resourcePath": "sprites\\spr_enemy_ship\\spr_enemy_ship.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6200fe50-0475-44dc-a1ed-1dcbc107d229",
+            "Value": {
+                "id": "b97aa020-3d6d-45bf-8000-2b38946bc0a0",
+                "resourcePath": "sprites\\spr_player_sails\\spr_player_sails.yy",
                 "resourceType": "GMSprite"
             }
         },

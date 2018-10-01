@@ -9,8 +9,8 @@ if(sails > 0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 6DEDA97B
 	/// @DnDParent : 50E09BF6
-	/// @DnDArgument : "expr" "-0.5"
+	/// @DnDArgument : "expr" "-0.25"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "sails"
-	sails += -0.5;
+	sails += -0.25;
 }
