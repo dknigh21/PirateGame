@@ -7,7 +7,7 @@ direction = image_angle - 90;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 7000BF5D
-/// @DnDArgument : "code" "speed_calculated = clamp(sails + (abs(angle_difference(direction, obj_wind.direction)) / 100), min_speed, max_speed);$(13_10)$(13_10)if (sails > 0)$(13_10){$(13_10)	min_speed = 0.5;$(13_10)}$(13_10)else$(13_10){$(13_10)	min_speed = 0;$(13_10)}$(13_10)$(13_10)if (place_meeting(x,y,obj_shoreline))$(13_10){$(13_10)	max_speed = 1.5;$(13_10)}$(13_10)else$(13_10){$(13_10)	max_speed = 3;$(13_10)}$(13_10)"
+/// @DnDArgument : "code" "speed_calculated = clamp(sails + (abs(angle_difference(direction, obj_wind.direction)) / 100), min_speed, max_speed);$(13_10)$(13_10)if (sails > 0)$(13_10){$(13_10)	min_speed = 0.5;$(13_10)}$(13_10)else$(13_10){$(13_10)	min_speed = 0;$(13_10)}$(13_10)$(13_10)if (position_meeting(x,y,obj_shoreline))$(13_10){$(13_10)	max_speed = 1.5;$(13_10)}$(13_10)else if (position_meeting(x,y,obj_land))$(13_10){$(13_10)	max_speed = 0;$(13_10)}$(13_10)else$(13_10){$(13_10)	max_speed = 3;$(13_10)}$(13_10)$(13_10)"
 speed_calculated = clamp(sails + (abs(angle_difference(direction, obj_wind.direction)) / 100), min_speed, max_speed);
 
 if (sails > 0)
@@ -19,9 +19,13 @@ else
 	min_speed = 0;
 }
 
-if (place_meeting(x,y,obj_shoreline))
+if (position_meeting(x,y,obj_shoreline))
 {
 	max_speed = 1.5;
+}
+else if (position_meeting(x,y,obj_land))
+{
+	max_speed = 0;
 }
 else
 {

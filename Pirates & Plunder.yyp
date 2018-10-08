@@ -79,6 +79,22 @@
             }
         },
         {
+            "Key": "4789f3c0-da68-47be-8e30-94f1fb8e6cfe",
+            "Value": {
+                "id": "d48e2f9b-c8c5-4a05-8e14-fd1822fde677",
+                "resourcePath": "objects\\obj_enemy_controller\\obj_enemy_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "48f1e81c-2fd4-4e0d-a47f-d3a8c3bbabbb",
+            "Value": {
+                "id": "9d25ecea-0cf8-4759-91f7-0c63beaae762",
+                "resourcePath": "sprites\\spr_land_collision\\spr_land_collision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c2846d9-b40b-4685-af15-32c8b928e2b5",
             "Value": {
                 "id": "88b70f4f-d0da-4822-920e-961243816183",
@@ -291,6 +307,14 @@
             "Value": {
                 "id": "cf254f41-0752-48ec-8b25-22fbc430ee04",
                 "resourcePath": "objects\\obj_cannonball\\obj_cannonball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc19d308-69be-40f5-9987-0caf91199373",
+            "Value": {
+                "id": "8d1a3eef-9533-42d4-9bcb-f76ca1f64d65",
+                "resourcePath": "objects\\obj_land\\obj_land.yy",
                 "resourceType": "GMObject"
             }
         },
