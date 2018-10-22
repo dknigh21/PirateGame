@@ -3,7 +3,7 @@
 /// @DnDHash : 6DA20E56
 /// @DnDArgument : "var" "enemyAlive"
 /// @DnDArgument : "object" "obj_enemy_ship"
-/// @DnDSaveInfo : "object" "a133e5a2-3b0c-4683-a2b4-9ec72ce975e9"
+/// @DnDSaveInfo : "object" "05e2cc29-f018-4555-86c6-332c5df265e3"
 enemyAlive = instance_number(obj_enemy_ship);
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
@@ -42,15 +42,31 @@ if(enemyAlive <= 0)
 /// @DnDHash : 3DA4B072
 /// @DnDArgument : "cond" "i < enemySpawn"
 for(i = 0; i < enemySpawn; i += 1) {
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 0037157A
+	/// @DnDParent : 3DA4B072
+	/// @DnDArgument : "var" "pX"
+	/// @DnDArgument : "value" "random(room_width)"
+	var pX = random(room_width);
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5719AC02
+	/// @DnDParent : 3DA4B072
+	/// @DnDArgument : "var" "pY"
+	/// @DnDArgument : "value" "random(room_height)"
+	var pY = random(room_height);
+
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 3E72B06B
 	/// @DnDParent : 3DA4B072
-	/// @DnDArgument : "xpos" "random(room_width)"
-	/// @DnDArgument : "ypos" "random(room_height)"
+	/// @DnDArgument : "xpos" "pX"
+	/// @DnDArgument : "ypos" "pY"
 	/// @DnDArgument : "objectid" "obj_enemy_ship"
-	/// @DnDSaveInfo : "objectid" "a133e5a2-3b0c-4683-a2b4-9ec72ce975e9"
-	instance_create_layer(random(room_width), random(room_height), "Instances", obj_enemy_ship);
+	/// @DnDSaveInfo : "objectid" "05e2cc29-f018-4555-86c6-332c5df265e3"
+	instance_create_layer(pX, pY, "Instances", obj_enemy_ship);
 }
 
 /// @DnDAction : YoYo Games.Common.Variable
